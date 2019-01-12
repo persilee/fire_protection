@@ -21,8 +21,9 @@ body {
 
 .header .title {
 	display: inline-block;
-	font-size: 0.28rem;
+	font-size: 0.48rem;
 	color: rgb(255, 255, 255);
+	margin-top: 12px;
 }
 
 .menu {
@@ -104,7 +105,7 @@ body {
 
 .banner-box {
 	width: 95%;
-	height: 320px;
+	height: 380px;
 	margin: 0 auto;
 	overflow: hidden;
 	position: relative;
@@ -117,14 +118,14 @@ body {
 }
 
 .banner {
-	height: 320px;
+	height: 380px;
 	width: 100%;
 	overflow: hidden;
 	position: relative;
 }
 
 .banner-slide {
-	height: 320px;
+	height: 380px;
 	width: 100%;
 	background-repeat: no-repeat;
 	position: absolute;
@@ -303,7 +304,7 @@ body {
 	width: 720px;
 	margin: 12px auto 16px;
 	padding-left: 106px;
-	padding-top: 28px;
+	padding-top: 12px;
 	border-top: 2px solid rgb(12, 79, 157);
 }
 
@@ -354,3 +355,6 @@ body {
 	margin-left: 34px;
 	color: #fff;
 }
+
+@media screen and (max-width: 1440px) {html{font-size:66.6573px;}}
+@media screen and (min-width: 1920px) {html{font-size:77.6562px;}}
