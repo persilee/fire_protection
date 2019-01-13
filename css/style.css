@@ -413,6 +413,15 @@ body {
 	font-size: 65%;
 }
 
+.login-box .login input.verification-code {
+	width: 45%;
+}
+
+.login-box .login .verification-code img {
+	position: relative;
+	top: 6px;
+}
+
 input::-webkit-input-placeholder {
 	color: #bdbdbd;
 }
@@ -448,6 +457,9 @@ input:-ms-input-placeholder {
 	}
 	.login-box .login {
 		margin-top: 20%;
+	}
+	.login-box .login input.verification-code {
+		width: 40%;
 	}
 }
 @media screen and (min-width: 1920px) {
