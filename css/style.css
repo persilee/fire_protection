@@ -370,5 +370,88 @@ body {
 	color: #fff;
 }
 
-@media screen and (max-width: 1440px) {html{font-size:70.6573px;}}
-@media screen and (min-width: 1920px) {html{font-size:77.6562px;}}
+.login-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login-box .login {
+	width: 40%;
+	max-width: 680px;
+	margin-top: 14%;
+	padding: .9rem 0;
+	font-size: .38rem;
+	text-align: center;
+	background-color: #095d945c;
+	border-radius: 2px;
+	box-shadow: 0 0 0.8rem 0.08rem rgba(63, 164, 250, 0.25);
+}
+
+.login-box .login .form-box {
+	margin: 28px auto 0;
+	width: 80%;
+	border: 1px solid #ffffff40;
+	padding: 8px 0;
+	border-radius: 28px;
+}
+
+.login-box .login label {
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	color: #eee;
+	font-size: 70%;
+}
+
+.login-box .login input {
+	width: 60%;
+	padding: 10px;
+	color: #fff;
+	border: none;
+	background: transparent;
+	font-size: 65%;
+}
+
+input::-webkit-input-placeholder {
+	color: #bdbdbd;
+}
+input::-moz-placeholder {
+	color: red;
+}
+input:-moz-placeholder {
+	color: red;
+}
+input:-ms-input-placeholder {
+	color: red;
+}
+
+.login-box .login .btn-box {
+	margin-top: 28px;
+}
+
+.login-box .login .btn-box .btn {
+	background-color: transparent;
+	padding: 8px 8%;
+	border: 1px solid #ffffff40;
+	color: #eee;
+	border-radius: 28px;
+}
+
+.login-box .login .btn-box .btn:hover {
+	background-color: #ffffff26;
+}
+
+@media screen and (max-width: 1440px) {
+	html {
+		font-size: 70.6573px;
+	}
+	.login-box .login {
+		margin-top: 20%;
+	}
+}
+@media screen and (min-width: 1920px) {
+	html {
+		font-size: 77.6562px;
+	}
+}
