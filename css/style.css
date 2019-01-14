@@ -496,11 +496,11 @@ input:-ms-input-placeholder {
 	}
 }
 
-@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
-only screen and (-moz-min-device-pixel-ratio: 1.5),
-only screen and (-o-min-device-pixel-ratio: 3/2),
-only screen and (min-device-pixel-ratio: 1.5),
-(min-resolution: 192dpi) {
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5) and (max-width: 1440px),
+only screen and (-moz-min-device-pixel-ratio: 1.5) and (max-width: 1440px),
+only screen and (-o-min-device-pixel-ratio: 3/2) and (max-width: 1440px),
+only screen and (min-device-pixel-ratio: 1.5) and (max-width: 1440px),
+(min-resolution: 192dpi) and (max-width: 1440px) {
 	.header .title {
 		font-size: 0.38rem;
 	}
