@@ -5,7 +5,11 @@ html {
 	font-size: 77.6562px;
 }
 
-body {
+.login-page {
+	background: url(/image/bg.png) 0% 0% / 100% 100% no-repeat;
+}
+
+.home-page>.wrapper {
 	background: url(/image/bg.png) 0% 0% / 100% 100% no-repeat;
 }
 
@@ -13,6 +17,10 @@ body {
 	text-align: center;
 	line-height: .5rem;
 	position: relative;
+}
+
+.login-page .header {
+	line-height: .4rem;
 }
 
 .header .title {
@@ -54,7 +62,7 @@ body {
 	padding: 0px;
 }
 
-.menu .nav > li {
+.menu .nav>li {
 	margin-bottom: 0.01rem;
 	float: left;
 	width: 1.5rem;
@@ -76,18 +84,18 @@ body {
 	margin: 0.08rem 0.2rem -0.02rem 0.02rem;
 }
 
-.menu .nav > li > a.active {
+.menu .nav>li>a.active {
 	background: url(/image/header_bg.png) 0% 0% / 100% 100% no-repeat;
 }
 
-.menu .nav li:hover > a {
+.menu .nav li:hover>a {
 	width: 90%;
 	color: rgb(37, 206, 219);
 	transform: translateX(0px);
 	transition: all 1s ease 0s;
 }
 
-.menu .nav li > ul {
+.menu .nav li>ul {
 	display: none;
 	position: absolute;
 	margin-top: 0px;
@@ -95,17 +103,17 @@ body {
 	margin-left: -0.03rem;
 }
 
-.menu .nav li:hover > ul {
+.menu .nav li:hover>ul {
 	display: block;
 }
 
-.menu .nav li > ul > li {
+.menu .nav li>ul>li {
 	float: left;
 	list-style: none;
 	margin: 2px;
 }
 
-.menu .nav li > ul > li > a {
+.menu .nav li>ul>li>a {
 	width: 90%;
 	line-height: 0.35rem;
 	color: rgb(255, 255, 255);
@@ -329,29 +337,29 @@ body {
 	color: #fff;
 }
 
-.footer .friend-link .links > ul {
+.footer .friend-link .links>ul {
 	margin: 0;
 	padding: 0;
 }
 
-.footer .friend-link .links > ul > li {
+.footer .friend-link .links>ul>li {
 	list-style: none;
 	float: left;
 	border-right: 1px solid #fff;
 	margin-bottom: 14px;
 }
 
-.footer .friend-link .links > ul > li:last-child {
+.footer .friend-link .links>ul>li:last-child {
 	border: none;
 }
 
-.footer .friend-link .links > ul > li a {
+.footer .friend-link .links>ul>li a {
 	text-decoration: none;
 	color: #fff;
 	margin: 0 16px;
 }
 
-.footer .friend-link .links > ul > li:hover a {
+.footer .friend-link .links>ul>li:hover a {
 	color: rgb(37, 206, 219);
 	text-decoration: underline;
 }
@@ -384,8 +392,9 @@ body {
 	font-size: .38rem;
 	text-align: center;
 	background-color: #095d945c;
-	border-radius: 2px;
-	box-shadow: 0 0 0.8rem 0.08rem rgba(63, 164, 250, 0.25);
+	border-radius: 12px;
+	border: 1px solid #ffffff1a;
+	box-shadow: 0 0 0.8rem 0.08rem rgba(63, 164, 250, 0.16);
 }
 
 .login-box .login .form-box {
@@ -411,6 +420,7 @@ body {
 	border: none;
 	background: transparent;
 	font-size: 65%;
+	outline: none;
 }
 
 .login-box .login input.verification-code {
@@ -425,12 +435,15 @@ body {
 input::-webkit-input-placeholder {
 	color: #bdbdbd;
 }
+
 input::-moz-placeholder {
 	color: red;
 }
+
 input:-moz-placeholder {
 	color: red;
 }
+
 input:-ms-input-placeholder {
 	color: red;
 }
@@ -455,13 +468,16 @@ input:-ms-input-placeholder {
 	html {
 		font-size: 70.6573px;
 	}
+
 	.login-box .login {
 		margin-top: 20%;
 	}
+
 	.login-box .login input.verification-code {
 		width: 40%;
 	}
 }
+
 @media screen and (min-width: 1920px) {
 	html {
 		font-size: 77.6562px;
