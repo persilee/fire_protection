@@ -474,26 +474,24 @@ input:-ms-input-placeholder {
 
 @media screen and (max-width: 1440px) {
 	html {
-		font-size: 70.6573px;
+		font-size: 66.4573px;
 	}
 
 	.login-box .login input.verification-code {
 		width: 40%;
 	}
-}
-
-@media screen and (min-width: 1440px) {
-	.login {
-		font-size: 60.2573px;
-	}
 
 	.login-page .header {
-		line-height: .26rem;
+		line-height: .56rem;
 	}
 }
 
 @media screen and (min-width: 1920px) {
 	html {
 		font-size: 77.6562px;
+	}
+
+	.login-page .header {
+		line-height: .46rem;
 	}
 }
