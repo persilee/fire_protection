@@ -7,6 +7,11 @@ html {
 
 .login-page {
 	background: url(/image/bg.png) 0% 0% / 100% 100% no-repeat;
+	height: 100%;
+}
+
+.login-page>.wrapper {
+	height: 100%;
 }
 
 .home-page>.wrapper {
@@ -382,12 +387,13 @@ html {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: calc(100% - 46px);
 }
 
 .login-box .login {
 	width: 40%;
 	max-width: 680px;
-	margin-top: 14%;
+	/* margin-top: 14%; */
 	padding: .9rem 0;
 	font-size: .38rem;
 	text-align: center;
@@ -469,12 +475,18 @@ input:-ms-input-placeholder {
 		font-size: 70.6573px;
 	}
 
-	.login-box .login {
-		margin-top: 20%;
-	}
-
 	.login-box .login input.verification-code {
 		width: 40%;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.login {
+		font-size: 60.2573px;
+	}
+
+	.login-page .header {
+		line-height: .26rem;
 	}
 }
 
